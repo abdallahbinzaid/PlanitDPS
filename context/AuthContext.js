@@ -8,9 +8,9 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
   const login = async (email, password) => {
-    // Simula autenticación exitosa: por ejemplo, si el correo es "usuario@udbproyectos.com" y la contraseña "1234"
-    if (email === "test@test.com" && password === "1234") {
-      setUser({ email, username: "TestUser", role: "admin" });
+    // Simula autenticación exitosa: por ejemplo, si el correo es "soporteusuario@udbproyectos.com" y la contraseña "1234"
+    if (email === "soporteusuario@udbproyectos.com" && password === "1234") {
+      setUser({ email, username: "SoporteUsuario", role: "admin" });
       return true;
     }
     return false;
